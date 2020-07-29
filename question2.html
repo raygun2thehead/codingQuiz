@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <!-- We need the following responsive meta tag to ensure things scale correctly across varying
+  devices. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Coding Quiz</title>
+
+  <!-- We need to bring in the bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <style>
+    .container {
+      background-color: white;
+      
+    }
+    
+    .container > div {
+      background-color: white;
+      margin: 5px;
+      padding: 5px;
+      font-size: 20px;
+    }
+
+    #clock {
+        float: right;
+    }
+
+    #highScores {
+        float: left;
+    }
+    
+    </style>
+    
+</head>
+
+<body>
+    <div class="container"></div>    
+        <div class="jumbotron">
+            <div id="highScores"><p>High Scores</p></div>
+            <div id="clock"><p><span id="seconds">0</span> Seconds Remaining</p></div> 
+        </div>
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+      
+              <div id="startGame" class="card">
+                <h4 class="card-header">Second Question</h4>
+                <p1> Which of the following can you not do with css?</p1>
+                <hr>
+                <div class="card-body">
+                  <div class="text-center">
+                    <button class="btn btn-primary btn-lg correctBtn">
+                        Write a function</button>
+                    <button class="btn btn-primary btn-lg incorrectBtn">
+                        Add text color</button>
+                            <br>
+                    <button class="btn btn-primary btn-lg incorrectBtn1">
+                        Set margins</button>
+                    <button class="btn btn-primary btn-lg incorrectBtn2">
+                        Change font size</button>
+                  </div>
+                </div>
+                <p class="card-footer footer"> </p>
+              </div>
+              <div class="col-lg-3"></div>
+    </div>
+    
+        
+    
+
+
+    <script src="./script/question2.js"></script>
+  
+  
+
+  </body>
+</html>
